@@ -136,6 +136,7 @@ fimalgoritmo
 algoritmo "Atividade 7"
 
 var
+
    numero: inteiro
    resto: inteiro
 
