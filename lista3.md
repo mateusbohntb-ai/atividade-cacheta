@@ -119,3 +119,144 @@ inicio
 
 fimalgoritmo
 ```
+```js
+algoritmo "Atividade 4"
+
+var
+   contador: inteiro
+   sexo: caractere
+   altura, maior, menor, somaMulheres, mediaMulheres: real
+   qtdHomens, qtdMulheres: inteiro
+
+inicio
+   maior <- 0
+   menor <- 0
+   somaMulheres <- 0
+   qtdHomens <- 0
+   qtdMulheres <- 0
+
+   para contador de 1 ate 15 faca
+      escreva("Digite a altura: ")
+      leia(altura)
+
+      escreva("Digite o sexo (M/F): ")
+      leia(sexo)
+
+    
+      se contador = 1 entao
+         maior <- altura
+         menor <- altura
+      senao
+         se altura > maior entao
+            maior <- altura
+         fimse
+
+         se altura < menor entao
+            menor <- altura
+         fimse
+      fimse
+
+    
+      se sexo = "M" ou sexo = "m" entao
+         qtdHomens <- qtdHomens + 1
+      fimse
+
+    
+      se sexo = "F" ou sexo = "f" entao
+         somaMulheres <- somaMulheres + altura
+         qtdMulheres <- qtdMulheres + 1
+      fimse
+
+   fimpara
+
+  
+   se qtdMulheres > 0 entao
+      mediaMulheres <- somaMulheres / qtdMulheres
+   senao
+      mediaMulheres <- 0
+   fimse
+
+   escreval("Número de homens: ", qtdHomens)
+   escreval("Maior altura: ", maior)
+   escreval("Menor altura: ", menor)
+   escreval("Média das mulheres: ", mediaMulheres)
+
+fimalgoritmo
+```
+```js
+algoritmo "Atividade 5"
+
+var
+   f, c: real
+
+inicio
+   f <- 50
+
+   escreval("Fahrenheit   Centigrados")
+
+   enquanto f <= 65 faca
+      c <- 5/9 * (f - 32)
+      escreval(f:5:1, "        ", c:6:2)
+      f <- f + 1
+   fimenquanto
+
+fimalgoritmo
+```
+```js
+algoritmo "Atividade 6 /A"
+
+var
+   numero: inteiro
+   soma: real
+
+inicio
+   soma <- 0
+
+   para numero de 1 ate 10 faca
+      soma <- soma + (numero / (numero * numero))
+   fimpara
+
+   escreval("Resultado da sequência A: ", soma)
+
+fimalgoritmo
+
+algoritmo "Atividade 6/B"
+
+var
+   numero :inteiro
+   soma: real
+
+inicio
+   soma <- 0
+
+   para numero de 1 ate 50 faca
+      soma <- soma + ((2 * numero - 1) / numero)
+   fimpara
+
+   escreval("Resultado da sequência B: ", soma)
+
+fimalgoritmo
+
+```
+```js
+algoritmo "Atividade 7"
+
+var
+  ok: inteiro
+  a, b, c: inteiro
+
+inicio
+  a <- 0
+  b <- 1
+
+  escreva(a, " ", b, " ")
+
+  para ok de 3 ate 11 faca
+    c <- a + b
+    escreva(c, " ")
+    a <- b
+    b <- c
+  fimpara
+
+fimalgoritmo
+```
