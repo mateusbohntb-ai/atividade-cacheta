@@ -1,38 +1,37 @@
 function Atividade1(){
-
-
-let contador=0
-let numero=3
+let contador=3
 let texto =""
-while (contador<=30) {
-let resultado=numero*contador 
-texto += numero +"x"+contador+"="+resultado+"\n"
-contador=contador+3
+for (contador;contador<=30;contador+=3) {
+texto +=contador+"\n"
 }
 alert (texto)
-
-//algoritmo "Atividade 1"
-
-//var
- // numero, contador ,resultado : inteiro
-
-//inicio
-
-  //contador<-0
- // numero <-3
-  //enquanto contador <=30 faca
-   // resultado <-numero*contador
-   // escreval(numero "x",contador,"=",resultado)
-    //contador<- contador +1
- // fimenquanto
-//fimalgoritmo
-
 }
 const BonusAtividade1 = document.getElementById("Atividade1")
 BonusAtividade1.addEventListener("click", () => { Atividade1() })
 
 function Atividade2(){
 
+let contador=1
+let resultado=1
+const numero=Number(prompt("Digite um numero:"))
+for (contador;numero>=contador;contador++){
+resultado=resultado*contador
+}
+alert(resultado)
+//algoritmo "Atividade 3"
+
+//var
+  //resultado : inteiro
+//numero  ,contador : inteiro
+///inicio
+//resultado<-1
+ //escreval("Digite um numero")
+ //leia(numero)
+ // para contador de numero ate 1 passo -1 faca 
+ // resultado<-resultado*contador
+  //fimpara
+  //  escreval(resultado)
+//fimalgoritmo
 }
 const BonusAtividade2 = document.getElementById("Atividade2")
 BonusAtividade2.addEventListener("click", () => { Atividade2() })
@@ -51,7 +50,7 @@ BonusAtividade4.addEventListener("click", () => { Atividade4() })
 
 function Atividade5(){
 
-}
+}3
 const BonusAtividade5 = document.getElementById("Atividade5")
 BonusAtividade5.addEventListener("click", () => { Atividade5() })
 
