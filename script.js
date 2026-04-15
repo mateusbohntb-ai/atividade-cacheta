@@ -38,6 +38,23 @@ BonusAtividade2.addEventListener("click", () => { Atividade2() })
 
 function Atividade3(){
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
 const BonusAtividade3 = document.getElementById("Atividade3")
 BonusAtividade3.addEventListener("click", () => { Atividade3() })
